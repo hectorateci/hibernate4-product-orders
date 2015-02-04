@@ -10,33 +10,7 @@ import org.hibernate.Session;
 
 public class SimplePersistenceFacade {
 	
-	
-        /**
-         * Consultar todos los productos consumidos (es decir, alguna vez pedidos) 
-         * por un determinado cliente (dado su id).
-         * @param s sesion de Hibernate
-         * @param idcliente identificador del cliente
-         * @return la lista de los productos asociados. Si no hay coincidencias
-         * se retorna una lista vacia.
-         */
-        public List<Producto> productoConsumidos(Session s,int idcliente){
-            return null;
-        }
-    
-        
-        /**
-         * Listar los nombres de los clientes que han recibido mercancía 
-         * mediante despacho por parte de un determinado vehículo (es decir, 
-         * dada su placa).
-         * @param s sesión de Hibernate
-         * @param placa la placa del vehículo
-         * @return la lista de los clientes asociados. Si no hay coincidencias
-         * se retorna una lista vacía.
-         */
-        public List<Cliente> clientesAsociadosAMercancia(Session s,String placa){
-            return null;
-        }
-    
+	    
 	/**
 	 * Hacer persistente un nuevo pedido, creado a partir del identificador de cliente dado, los identificadores
 	 * de los productos, sus cantidades, y la fecha.
